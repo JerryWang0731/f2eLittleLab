@@ -1,0 +1,25 @@
+<iframe
+  id="iff"
+  style="width: 560px; height: 315px"
+  src="./forframe.html"  
+  frameborder="0"
+  allowfullscreen
+></iframe>
+
+<!--
+    src="https://www.youtube.com/embed/XN031PuViqI?list=PL2SrkGHjnWcyWbA4MGSeTQVNiFHt1YbjC"
+-->
+<script>
+  var frame = document.querySelector('#iff');
+    frame.onload = function () {
+      var frameWin = frame.contentWindow;
+      console.log('main window.location ' + window.location);
+      console.log('main window.location.origin ' + window.location.origin);
+      console.log('main window.origin ' + window.origin);
+
+      console.log('frameWin window.location ' + frameWin.location);
+      console.log('frameWin frameWin.location.origin ' + frameWin.location.origin); 
+      console.log('frameWin frameWin.origin ' + frameWin.origin);
+
+    };
+</script>
